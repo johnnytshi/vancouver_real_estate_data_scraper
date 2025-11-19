@@ -2,6 +2,24 @@
 
 A headless scraper for collecting real estate listings data from Zealty.ca covering Metro Vancouver. Uses direct API calls to efficiently gather thousands of listings across different categories.
 
+## 🚀 How to Use This Project
+
+**You have two options:**
+
+### Option 1: Use Pre-Scraped Data (Easiest!)
+**Just want to analyze the data?** No need to run the scraper yourself!
+
+1. Navigate to the `data/` folder
+2. Choose a run folder (e.g., `run-2025-11-18_17-54-48/`)
+3. Upload the CSV files directly to **Claude** or your preferred analysis tool
+
+Each dataset contains thousands of real listings ready for analysis.
+
+### Option 2: Run the Scraper Yourself
+Want fresh data? Follow the [Setup](#setup) and [Usage](#usage) instructions below to scrape current listings.
+
+---
+
 ## Features
 
 - **Direct API Integration**: No UI clicking required after login—issues direct HTTP POST requests to the backend
