@@ -13,6 +13,15 @@ load_dotenv()
 USERNAME = os.getenv("ZEALTY_USERNAME")
 PASSWORD = os.getenv("ZEALTY_PASSWORD")
 
+# Validate credentials at startup
+if not USERNAME or not PASSWORD:
+    print("ERROR: Missing credentials!")
+    print("Please create a .env file with:")
+    print("  ZEALTY_USERNAME=your.email@example.com")
+    print("  ZEALTY_PASSWORD=your_password_here")
+    print("\nYou can copy .env.example to .env and fill in your credentials.")
+    exit(1)
+
 def save_to_csv(listings, filename, run_dir):
     """Save listings to a CSV file in the run directory"""
     if not listings:
