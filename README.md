@@ -1,4 +1,4 @@
-# Vancouver Real Estate Scraper
+# Vancouver Real Estate Data Scraper
 
 A headless scraper for collecting real estate listings data from Zealty.ca covering Metro Vancouver. Uses direct API calls to efficiently gather thousands of listings across different categories.
 
